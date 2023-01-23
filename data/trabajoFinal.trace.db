@@ -1,0 +1,251 @@
+2023-01-23 13:23:21 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "SELECT * FROM CLIENTES\000d\000a\000d\000aINSERT [*]INTO CLIENTES (nombre, apellido, dni) values\000d\000a( 'Nicolas', 'Moranzoni', 41834802),\000d\000a('Lucas', 'Rodriguez', 3475928 ),\000d\000a('Juan' , 'Gonzalez', 24565140),\000d\000a('Miguel' , 'Gimenez', 11565320)"
+Syntax error in SQL statement "SELECT * FROM CLIENTES\000d\000a\000d\000aINSERT [*]INTO CLIENTES (nombre, apellido, dni) values\000d\000a( 'Nicolas', 'Moranzoni', 41834802),\000d\000a('Lucas', 'Rodriguez', 3475928 ),\000d\000a('Juan' , 'Gonzalez', 24565140),\000d\000a('Miguel' , 'Gimenez', 11565320)"; SQL statement:
+SELECT * FROM CLIENTES
+
+INSERT INTO CLIENTES (nombre, apellido, dni) values
+( 'Nicolas', 'Moranzoni', 41834802),
+('Lucas', 'Rodriguez', 3475928 ),
+('Juan' , 'Gonzalez', 24565140),
+('Miguel' , 'Gimenez', 11565320) [42000-214]
+2023-01-23 13:25:01 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "PRODCUTOS" no encontrada
+Table "PRODCUTOS" not found; SQL statement:
+SELECT*FROM PRODCUTOS [42102-214]
+2023-01-23 13:26:09 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO PRODUCTOS (codigo, descripcion, cantidad_disponible, precio) values\000d\000a(23, ""mesa"", 2, 1000.00)\000d\000a[*](10, ""silla"", 1, 200.00)\000d\000a(60, ""mesa de madera"", 5, 8000.00)"
+Syntax error in SQL statement "INSERT INTO PRODUCTOS (codigo, descripcion, cantidad_disponible, precio) values\000d\000a(23, ""mesa"", 2, 1000.00)\000d\000a[*](10, ""silla"", 1, 200.00)\000d\000a(60, ""mesa de madera"", 5, 8000.00)"; SQL statement:
+INSERT INTO PRODUCTOS (codigo, descripcion, cantidad_disponible, precio) values
+(23, "mesa", 2, 1000.00)
+(10, "silla", 1, 200.00)
+(60, "mesa de madera", 5, 8000.00) [42000-214]
+2023-01-23 13:27:13 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO PRODUCTOS (codigo, descripcion, cantidad_disponible, precio) values\000d\000a(23, ""mesa"", 2, 1000)\000d\000a[*](10, ""silla"", 1, 200.00)\000d\000a(60, ""mesa de madera"", 5, 8000)"
+Syntax error in SQL statement "INSERT INTO PRODUCTOS (codigo, descripcion, cantidad_disponible, precio) values\000d\000a(23, ""mesa"", 2, 1000)\000d\000a[*](10, ""silla"", 1, 200.00)\000d\000a(60, ""mesa de madera"", 5, 8000)"; SQL statement:
+INSERT INTO PRODUCTOS (codigo, descripcion, cantidad_disponible, precio) values
+(23, "mesa", 2, 1000)
+(10, "silla", 1, 200.00)
+(60, "mesa de madera", 5, 8000) [42000-214]
+2023-01-23 13:30:47 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "SELECT *FROM PRODUCTOS\000d\000a\000d\000aINSERT [*]INTO PRODUCT (codigo, descripcion, cantidad, precio) values\000d\000a(23, ""Table"", 2, 1000.00),\000d\000a(10, ""Chair"", 1, 200.00),\000d\000a(60, ""Wood Table"", 5, 8000.00)"
+Syntax error in SQL statement "SELECT *FROM PRODUCTOS\000d\000a\000d\000aINSERT [*]INTO PRODUCT (codigo, descripcion, cantidad, precio) values\000d\000a(23, ""Table"", 2, 1000.00),\000d\000a(10, ""Chair"", 1, 200.00),\000d\000a(60, ""Wood Table"", 5, 8000.00)"; SQL statement:
+SELECT *FROM PRODUCTOS
+
+INSERT INTO PRODUCT (codigo, descripcion, cantidad, precio) values
+(23, "Table", 2, 1000.00),
+(10, "Chair", 1, 200.00),
+(60, "Wood Table", 5, 8000.00) [42000-214]
+2023-01-23 13:31:23 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "SELECT *FROM PRODUCTOS\000d\000a\000d\000aINSERT [*]INTO PRODUCT (codigo, descripcion, cantidad, precio) values\000d\000a(23, 'Table', 2, 1000.00),\000d\000a(10, 'Chair', 1, 200.00),\000d\000a(60, 'Wood Table', 5, 8000.00)"
+Syntax error in SQL statement "SELECT *FROM PRODUCTOS\000d\000a\000d\000aINSERT [*]INTO PRODUCT (codigo, descripcion, cantidad, precio) values\000d\000a(23, 'Table', 2, 1000.00),\000d\000a(10, 'Chair', 1, 200.00),\000d\000a(60, 'Wood Table', 5, 8000.00)"; SQL statement:
+SELECT *FROM PRODUCTOS
+
+INSERT INTO PRODUCT (codigo, descripcion, cantidad, precio) values
+(23, 'Table', 2, 1000.00),
+(10, 'Chair', 1, 200.00),
+(60, 'Wood Table', 5, 8000.00) [42000-214]
+2023-01-23 13:31:37 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "SELECT *FROM PRODUCTOS\000d\000a\000d\000aINSERT [*]INTO PRODUCT (codigo, descripcion, cantidad, precio) values\000d\000a(23, 'Table', 2, 10000),\000d\000a(10, 'Chair', 1, 20000),\000d\000a(60, 'Wood Table', 5, 80000)"
+Syntax error in SQL statement "SELECT *FROM PRODUCTOS\000d\000a\000d\000aINSERT [*]INTO PRODUCT (codigo, descripcion, cantidad, precio) values\000d\000a(23, 'Table', 2, 10000),\000d\000a(10, 'Chair', 1, 20000),\000d\000a(60, 'Wood Table', 5, 80000)"; SQL statement:
+SELECT *FROM PRODUCTOS
+
+INSERT INTO PRODUCT (codigo, descripcion, cantidad, precio) values
+(23, 'Table', 2, 10000),
+(10, 'Chair', 1, 20000),
+(60, 'Wood Table', 5, 80000) [42000-214]
+2023-01-23 13:31:44 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "SELECT *FROM PRODUCTOS\000d\000a\000d\000aINSERT [*]INTO PRODUCT (codigo, descripcion, cantidad, precio) values\000d\000a(23, 'Table', 2, 10000),\000d\000a(10, 'Chair', 1, 20000),\000d\000a(60, 'Wood Table', 5, 80000)"
+Syntax error in SQL statement "SELECT *FROM PRODUCTOS\000d\000a\000d\000aINSERT [*]INTO PRODUCT (codigo, descripcion, cantidad, precio) values\000d\000a(23, 'Table', 2, 10000),\000d\000a(10, 'Chair', 1, 20000),\000d\000a(60, 'Wood Table', 5, 80000)"; SQL statement:
+SELECT *FROM PRODUCTOS
+
+INSERT INTO PRODUCT (codigo, descripcion, cantidad, precio) values
+(23, 'Table', 2, 10000),
+(10, 'Chair', 1, 20000),
+(60, 'Wood Table', 5, 80000) [42000-214]
+2023-01-23 13:31:46 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "PRODUCT" no encontrada
+Table "PRODUCT" not found; SQL statement:
+INSERT INTO PRODUCT (codigo, descripcion, cantidad, precio) values
+(23, 'Table', 2, 10000),
+(10, 'Chair', 1, 20000),
+(60, 'Wood Table', 5, 80000) [42102-214]
+2023-01-23 13:32:03 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "CANTIDAD" no encontrada
+Column "CANTIDAD" not found; SQL statement:
+INSERT INTO PRODUCTOS (codigo, descripcion, cantidad, precio) values
+(23, 'Table', 2, 10000),
+(10, 'Chair', 1, 20000),
+(60, 'Wood Table', 5, 80000) [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.parseColumn(Parser.java:1256)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1241)
+	at org.h2.command.Parser.parseInsert(Parser.java:1641)
+	at org.h2.command.Parser.parsePrepared(Parser.java:814)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:237)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1339)
+	at org.h2.server.web.WebApp.query(WebApp.java:1137)
+	at org.h2.server.web.WebApp.query(WebApp.java:1113)
+	at org.h2.server.web.WebApp.process(WebApp.java:244)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:176)
+	at org.h2.server.web.JakartaWebServlet.doGet(JakartaWebServlet.java:129)
+	at org.h2.server.web.JakartaWebServlet.doPost(JakartaWebServlet.java:166)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+2023-01-23 13:32:28 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "CANTIDADDISPONIBLE" no encontrada
+Column "CANTIDADDISPONIBLE" not found; SQL statement:
+INSERT INTO PRODUCTOS (codigo, descripcion, cantidadDisponible, precio) values
+(23, 'Table', 2, 10000),
+(10, 'Chair', 1, 20000),
+(60, 'Wood Table', 5, 80000) [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.parseColumn(Parser.java:1256)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1241)
+	at org.h2.command.Parser.parseInsert(Parser.java:1641)
+	at org.h2.command.Parser.parsePrepared(Parser.java:814)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:237)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1339)
+	at org.h2.server.web.WebApp.query(WebApp.java:1137)
+	at org.h2.server.web.WebApp.query(WebApp.java:1113)
+	at org.h2.server.web.WebApp.process(WebApp.java:244)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:176)
+	at org.h2.server.web.JakartaWebServlet.doGet(JakartaWebServlet.java:129)
+	at org.h2.server.web.JakartaWebServlet.doPost(JakartaWebServlet.java:166)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+2023-01-23 15:19:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Imposible eliminar "CLIENTES" debido a que "FK91HNQU9IYGUU0UAAEU158822P" depende de él.
+Cannot drop "CLIENTES" because "FK91HNQU9IYGUU0UAAEU158822P" depends on it; SQL statement:
+drop table CLIENTES if exists [90107-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:632)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.command.ddl.DropTable.prepareDrop(DropTable.java:97)
+	at org.h2.command.ddl.DropTable.update(DropTable.java:121)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:252)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:261)
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254)
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:54)
+	at org.springframework.boot.jdbc.init.DataSourceScriptDatabaseInitializer.runScripts(DataSourceScriptDatabaseInitializer.java:87)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.runScripts(AbstractScriptDatabaseInitializer.java:146)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyScripts(AbstractScriptDatabaseInitializer.java:108)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applySchemaScripts(AbstractScriptDatabaseInitializer.java:98)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.initializeDatabase(AbstractScriptDatabaseInitializer.java:76)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.afterPropertiesSet(AbstractScriptDatabaseInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1797)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1747)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:961)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:915)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.example.ECommerce.Trabajo.Final.Java.Inicial.Moranzoni.Application.main(Application.java:10)
+2023-01-23 15:21:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "CLIENTES" ya existe
+Table "CLIENTES" already exists; SQL statement:
+create table CLIENTES ( NOMBRE varchar (200), APELLIDO varchar (200), DNI int not null, ID_CLIENTE int not null, primary key (ID_CLIENTE) ) [42101-214]
